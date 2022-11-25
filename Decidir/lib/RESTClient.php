@@ -49,6 +49,7 @@ class RESTClient{
 		}
 
 		$this->url = $this->endpoint;
+		echo($this->url);
 	}
 
 	public function getUrl($url){
