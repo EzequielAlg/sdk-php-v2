@@ -40,7 +40,7 @@ class RESTClient{
 				$this->url = $this->endpoint;
 				return;
 			}
-			if($url == 'closures/batchclosure'){
+			if($url == 'batchclosure'){
 				$this->endpoint = $this->endpoint.'/api/v1/'.$url;
 			}else{
 				$this->endpoint = $this->endpoint.'/api/v2/'.$url;
