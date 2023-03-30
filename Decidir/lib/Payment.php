@@ -190,7 +190,7 @@ class Payment{
 	}
 
 	public function rmDecAmount($amount){
-		$formatedAmount = $amount*100;	
+		$formatedAmount = (int) bcmul($number, "100.0");	
 
 		return $formatedAmount;
 	}
