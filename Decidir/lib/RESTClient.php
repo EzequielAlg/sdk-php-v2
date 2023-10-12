@@ -73,7 +73,7 @@ class RESTClient{
 		$this->action = $action;
 
 		if($action == 'healthcheck' || $action == 'orchestrator/checkout/payments/link'){
-			$this->key = "";
+			$this->key = $this->keys_data['private_key'];
 
 		}elseif($action == 'tokens'){
 			$this->key = $this->keys_data['public_key'];
